@@ -1,0 +1,27 @@
+# Environment / secrets — never commit any env file, including the .env.local/.env.dev/.env.prod
+# profile templates (see /run skill). These can carry real credentials once filled in.
+.env
+.env.*
+
+# Build artifacts
+tmp/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+/bin/
+/dist/
+.gopath/
+.gocache/
+
+# Air (hot reload) logs
+build-errors.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

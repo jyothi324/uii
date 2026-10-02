@@ -1,0 +1,18 @@
+# Environment / secrets
+.env
+.env.*
+
+# VCS / IDE
+.git
+.gitignore
+.vscode
+.idea
+
+# Build artifacts
+tmp/
+*.exe
+/bin/
+/dist/
+
+# Docs / misc
+README.md

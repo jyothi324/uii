@@ -1,0 +1,24 @@
+name: Go Coverage
+
+on:
+  push:
+    branches: [ main,develop ]
+  pull_request:
+    branches: [ main,develop ]
+
+jobs:
+  coverage:
+    name: coverage-check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.4'
+
+      - name: Run coverage check
+        run: make check

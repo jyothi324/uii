@@ -1,0 +1,6 @@
+# Environment / secrets — never commit any env file, including the .env.example/.env.local/
+# .env.dev/.env.prod profile templates (see /run skill). These can carry real credentials once filled in.
+.env
+.env*
+*.log
+tmp/
